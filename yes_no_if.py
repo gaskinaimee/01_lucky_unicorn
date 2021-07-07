@@ -1,10 +1,16 @@
 # Ask the user if they have played before.
-played_before = input("Have you played this game before?")
+show_instructions = input("Have you played this game before?").lower()
 
 # If they say "yes", output "program continues".
-if played_before == "yes" or "y" or "yEs" or "Yes" or "YES":
-    print("Output continues.")
-elif played_before == "no" or "n" or "No" or "NO" or "nO":
+if show_instructions == "yes":
+    print("Program continues.")
+elif show_instructions == "y":
+    print("Program continues.")
+elif show_instructions == "no":
     print("Display instructions.")
-# If they say "no", output "display instructions".
+elif show_instructions == "n":
+    print("Display instructions.")
 
+# If they say "no", output "display instructions".
+else:
+    print("Please answer with either yes or no.")
