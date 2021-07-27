@@ -12,11 +12,10 @@ def yes_no(question):
         else:
             print("Please answer with either yes or no.")
 
-
 def instructions():
     print("***** How to Play *****")
     print()
-    print("The rules of the game go here")
+    print("Instructions of the game go here.")
     print()
     return instructions
 
@@ -46,6 +45,9 @@ played_before = yes_no("Have you played the game before? ")
 if played_before == "no":
     instructions()
 
+print()
 
 # Ask user how much they want to play with...
+how_much = num_check("How much would you like to play with?", 0, 10)
 
+print("You will be spending ${}".format(how_much))
