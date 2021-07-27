@@ -18,4 +18,7 @@ def num_check (question, low, high):
             print(error)
 
 # Main routine goes here...
+how_much == num_check("How much would you"
+                      "Like to play with?", 0, 10)
 
+print("You will be spending ${}".format(how_much))
