@@ -3,6 +3,7 @@ import random
 # Main routine goes here
 
 tokens = ["unicorn", "horse", "zebra", "donkey"]
+balance = 100
 
 # Testing loop to generate twenty tokens.
 for item in range(0, 20):
@@ -17,4 +18,4 @@ for item in range(0, 20):
         balance -= 0.5
 
 # Output
-print("Token: {} ,Balance: ${}".format(chosen, balance))
+print("Token: {}, Balance: ${}".format(chosen, balance))
